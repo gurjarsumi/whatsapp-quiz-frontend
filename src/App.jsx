@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
 
-const API_BASE = "http://localhost:8000/api";
+// Automatically swaps between local server and production server URLs
+const API_BASE = import.meta.env.PROD
+  ? "https://your-backend-deployed-link.onrender.com/api"
+  : "http://localhost:8000/api";
 
 export default function App() {
   // Navigation & User State
