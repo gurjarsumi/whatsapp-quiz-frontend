@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 // Automatically swaps between local server and production server URLs
-const API_BASE = import.meta.env.PROD
-  ? "https://your-backend-deployed-link.onrender.com/api"
-  : "http://localhost:8000/api";
+const API_BASE = "https://whatsapp-quiz-backend-zd5o.onrender.com/api";
 
 export default function App() {
   // Navigation & User State
